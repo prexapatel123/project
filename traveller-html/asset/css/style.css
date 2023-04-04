@@ -1,15 +1,65 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Poppins';
 }
-html{
+
+html {
     font-size: 62.5%;
 }
+.container{
+    max-width: 137rem;
+    margin: 0 auto;
+}
+/*************header****************/
+header {
+    padding-top: 7.7rem;
+    background-color: #9B9B9B;
+}
 
-#demo{
-    font-size: 2rem;
-}  
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav{
+    margin-left: auto;
+}
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 6.7rem;
+}
+
+header nav ul li a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #FFFFFF;
+}
+header .search i{ 
+    font-size: 1.8rem;
+    color: #FFFFFF;
+}
+/*******************************************/
