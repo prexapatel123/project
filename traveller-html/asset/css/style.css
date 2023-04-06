@@ -186,15 +186,19 @@ span {
     margin-top: 22rem;
     margin-bottom: 5rem;
 }
-
-.explore-slide{
-    border-radius: 1rem;
-    box-shadow: 0 2rem 3.5rem 0 rgba(0, 0, 0, 0.4);
+.swiper-slide{
+    position: relative;
 }
+.explore-slide {
+    margin: 0 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 3.5rem 0 rgba(0, 0, 0, 10%);
+}
+
 .explore-img {
     max-width: 44.4rem;
     height: 36.1rem;
-    margin: 0 1rem;
+
 }
 
 .explore-img img {
@@ -207,7 +211,7 @@ span {
 
 .explore-data {
     position: relative;
-    margin: 0 1.9rem 8.1rem 1.4rem;
+    padding: 0 1.9rem 2.6rem 1.4rem;
 }
 
 .explore-circle {
@@ -216,7 +220,7 @@ span {
     background-color: white;
     box-shadow: 0 0.4rem 3.1rem 0 rgba(0, 0, 0, 14);
     position: absolute;
-    top: -4.9rem;
+    top: -5.5rem;
     right: 2rem;
     border-radius: 50%;
 }
@@ -244,4 +248,31 @@ span {
     font-size: 14px;
     line-height: 21px;
     color: #555555;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    width: 6.9rem;
+    height: 6.6rem;
+    background-color: #FFFFFF;
+    border: 3px solid #737373;
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 5rem 0 rgba(0, 0, 0, 10);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    color: #737373;
+}
+
+/*****************************************/
+/**********choose section********************/
+#choose{
+    margin-top: 17rem;
+    background: #C4C4C4;
+}
+#choose h2{
+    color: #FFFFFF;
+}
+#choose p{
+    color: #EFEFEF;
 }

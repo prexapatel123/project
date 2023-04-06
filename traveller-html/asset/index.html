@@ -90,7 +90,11 @@
                                 <div class="explore-img">
                                     <img src="../asset/images/explore-2.jpg" alt="">
                                 </div>
-                                <div class="explore-data"></div>
+                                <div class="explore-data">
+                                    <div class="explore-circle"><span>"</span></div>
+                                    <h4>Bali, Indonesia.</h4>
+                                    <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -98,7 +102,11 @@
                                 <div class="explore-img">
                                     <img src="../asset/images/explore-3.jpg" alt="">
                                 </div>
-                                <div class="explore-data"></div>
+                                <div class="explore-data">
+                                    <div class="explore-circle"><span>"</span></div>
+                                    <h4>Bali, Indonesia.</h4>
+                                    <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -106,7 +114,11 @@
                                 <div class="explore-img">
                                     <img src="../asset/images/explore-4.jpg" alt="">
                                 </div>
-                                <div class="explore-data"></div>
+                                <div class="explore-data">
+                                    <div class="explore-circle"><span>"</span></div>
+                                    <h4>Bali, Indonesia.</h4>
+                                    <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,7 +127,31 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+            </div>
+        </section>
 
+        <section id="choose">
+            <div class="container">
+                <h2 class="main-title">Why choose Us?</h2>
+                <p class="sub-title">our services have been trusted by world travelers.</p>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
     </main>
@@ -151,6 +187,36 @@
                 },
                 1024: {
                     slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+            },
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 5,
                     spaceBetween: 0,
                 },
             },
