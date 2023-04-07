@@ -148,8 +148,8 @@ header .search i {
     outline: none;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
     color: #9B9B9B;
 }
 
@@ -167,16 +167,16 @@ header .search i {
     padding: 1rem 2rem;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
     color: #FFFFFF;
 }
 
 span {
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
     color: #ECECEC;
 }
 
@@ -186,19 +186,16 @@ span {
     margin-top: 22rem;
     margin-bottom: 5rem;
 }
-.swiper-slide{
-    position: relative;
-}
+
 .explore-slide {
     margin: 0 1rem;
     border-radius: 1rem;
-    box-shadow: 0 2rem 3.5rem 0 rgba(0, 0, 0, 10%);
+    box-shadow: 0 2rem 3.5rem 0 rgba(0, 0, 0, 0.10);
 }
 
 .explore-img {
     max-width: 44.4rem;
     height: 36.1rem;
-
 }
 
 .explore-img img {
@@ -218,7 +215,7 @@ span {
     width: 8rem;
     height: 7.8rem;
     background-color: white;
-    box-shadow: 0 0.4rem 3.1rem 0 rgba(0, 0, 0, 14);
+    box-shadow: 0 0.4rem 3.1rem 0 rgba(0, 0, 0, 0.14);
     position: absolute;
     top: -5.5rem;
     right: 2rem;
@@ -227,8 +224,8 @@ span {
 
 .explore-circle span {
     font-weight: 400;
-    font-size: 72px;
-    line-height: 126px;
+    font-size: 7.2rem;
+    line-height: 12.6rem;
     color: #000000;
     display: inline-block;
     padding: 0.3rem 3rem;
@@ -236,8 +233,8 @@ span {
 
 .explore-data h4 {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
     color: #000000;
     margin-top: 3.4rem;
     margin-bottom: 0.6rem;
@@ -245,34 +242,43 @@ span {
 
 .explore-data p {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
     color: #555555;
 }
-.swiper-button-prev,
-.swiper-button-next {
-    position: absolute;
-    width: 6.9rem;
-    height: 6.6rem;
-    background-color: #FFFFFF;
-    border: 3px solid #737373;
+
+.explore-slider .swiper-button-prev,
+.explore-slider .swiper-button-next {
+    width: 7rem;
+    height: 7rem;
     border-radius: 1rem;
-    box-shadow: 0 0.8rem 5rem 0 rgba(0, 0, 0, 10);
+    box-shadow: 0 0.8rem 5rem 0 rgba(0, 0, 0, 0.25);
+    top: 2.5rem;
 }
+
+.explore-slider .swiper-wrapper {
+    padding-top: 13rem;
+}
+
+
 .swiper-button-next:after,
-.swiper-button-prev:after{
+.swiper-button-prev:after {
     color: #737373;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 /*****************************************/
 /**********choose section********************/
-#choose{
+#choose {
     margin-top: 17rem;
     background: #C4C4C4;
 }
-#choose h2{
+
+#choose h2 {
     color: #FFFFFF;
 }
-#choose p{
+
+#choose p {
     color: #EFEFEF;
 }
