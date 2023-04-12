@@ -197,7 +197,79 @@
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-
+            </div>
+        </section>
+        <section id="partner">
+            <div class="container">
+                <h2 class="main-title">Our tour partner</h2>
+                <p class="sub-title">There are many variation of passage of lorem ipsum available but the majority have
+                    suffered alteration </p>
+                <div class="partner-menu">
+                    <img src="../asset/images/Katana.png" alt="">
+                    <img src="../asset/images/travava.png" alt="">
+                    <img src="../asset/images/bigui.png" alt="">
+                    <img src="../asset/images/Booking.png" alt="">
+                    <img src="../asset/images/Jakmaen.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="client-say">
+            <div class="container1">
+                <h3>TESTIMONIAL</h3>
+                <h2 class="main-title">What our client say</h2>
+                <p class="sub-title">Create a visual identity for your company and a overall brand</p>
+                <div class="swiper client-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="client-slide">
+                                <div class="client-img">
+                                    <img src="../asset/images/client1.png" alt="">
+                                    
+                                </div>
+                                <div class="client-data">
+                                    <h4>Sara Jay</h4>
+                                    <p>Traveller</p>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <p>Before we define any approach, we need to deline the brands overall goal. We  then need to dive.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-slide">
+                                <div class="client-img">
+                                    <img src="../asset/images/client2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-slide">
+                                <div class="client-img">
+                                    <img src="../asset/images/client3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-slide">
+                                <div class="client-img">
+                                    <img src="../asset/images/client1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-slide">
+                                <div class="client-img">
+                                    <img src="../asset/images/client2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </section>
     </main>
@@ -237,6 +309,32 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".choose-slider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+            },
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".client-slider", {
             slidesPerView: 1,
             spaceBetween: 10,
             // Navigation arrows

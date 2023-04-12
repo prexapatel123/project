@@ -300,9 +300,11 @@ span {
     position: absolute;
     background-color: rgba(0 0 0 0.2);
 }
-#choose .container{
+
+#choose .container {
     position: relative;
 }
+
 #choose .main-title {
     color: #FFFFFF;
 }
@@ -316,8 +318,9 @@ span {
     height: 9.7rem;
     border-radius: 1rem;
 }
+
 .choose {
-    margin: 0 4.5rem;
+    margin: 0 4.4rem;
     border-radius: 1rem;
     background-color: #FFFFFF;
     padding: 4.4rem 2.2rem 7rem 1.9rem;
@@ -374,7 +377,111 @@ span {
     font-size: 2.5rem;
     font-weight: bold;
 }
-#choose .container .container1{
-    max-width: 115rem;
+
+#choose .container .container1 {
+    max-width: 118rem;
     margin: 0 auto;
+}
+
+/**************************************************/
+/*******************partner************************/
+#partner .sub-title {
+    max-width: 63rem;
+    margin: 0 auto;
+}
+
+.partner-menu {
+    height: 5.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+    padding: 0 14rem;
+}
+
+.partner-menu img {
+    display: inline-block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/*****************************************************/
+/**************************client-say*******************/
+#client-say {
+    margin-top: 16.1rem;
+}
+
+#client-say .container1 {
+    border: 1px solid black;
+    margin-left: 9.5rem;
+}
+
+#client-say h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 70px;
+    letter-spacing: 0.14em;
+    color: #626262;
+}
+
+#client-say .main-title {
+    text-align: left;
+    margin: 0;
+}
+
+#client-say .sub-title {
+    text-align: left;
+    max-width: 44.3rem;
+    margin-top: 1.8rem;
+}
+
+.client-slide {
+    margin: 0 2.2rem;
+    /* position: relative; */
+    background-color: #c2c0c0;
+}
+
+.client-img {
+    max-width: 13rem;
+    height: 13rem;
+    /* position: absolute;
+    top: 0;
+    left: 16rem; */
+}
+
+.client-img img {
+    display: inline-block;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0 16rem;
+}
+.client-data{
+    padding: 0 5.4rem 5.1rem 5.3rem;
+}
+.client-data h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.client-data a {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.client-data a i {
+    width: 2.1rem;
+    height: 2.1rem;
+    color: #F4BC61;;
+    display: inline-block;
+}
+
+.client-data p {
+    max-width: 29.2rem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #858585;
 }
