@@ -330,8 +330,8 @@ span {
 .choose-data h4 {
     margin-top: 3.3rem;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
     color: #000000;
 }
 
@@ -340,15 +340,15 @@ span {
     margin-bottom: 3.8rem;
     max-width: 28.8rem;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
     color: #858585;
 }
 
 .choose-data a {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
     color: #000000;
 }
 
@@ -409,17 +409,17 @@ span {
 /**************************client-say*******************/
 #client-say {
     margin-top: 16.1rem;
+    position: relative;
 }
 
 #client-say .container1 {
-    border: 1px solid black;
     margin-left: 9.5rem;
 }
 
 #client-say h3 {
     font-weight: 500;
-    font-size: 30px;
-    line-height: 70px;
+    font-size: 3rem;
+    line-height: 7rem;
     letter-spacing: 0.14em;
     color: #626262;
 }
@@ -437,51 +437,97 @@ span {
 
 .client-slide {
     margin: 0 2.2rem;
-    /* position: relative; */
-    background-color: #c2c0c0;
 }
 
 .client-img {
     max-width: 13rem;
     height: 13rem;
-    /* position: absolute;
-    top: 0;
-    left: 16rem; */
 }
 
 .client-img img {
     display: inline-block;
     object-fit: cover;
     object-position: center center;
-    margin: 0 16rem;
+    margin: 0 14.8rem;
+    position: absolute;
+    top: 6.5rem;
 }
-.client-data{
-    padding: 0 5.4rem 5.1rem 5.3rem;
+
+.client-data {
+    padding: 9rem 5.4rem 5.1rem 5.3rem;
+    box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.10);
+    border-radius: 1rem;
 }
+
 .client-data h4 {
     text-align: center;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
     color: #000000;
 }
 
-.client-data a {
-    display: inline-block;
-    margin-bottom: 2rem;
+.client-data h4+p {
+    max-width: 100%;
+    text-align: center;
 }
 
-.client-data a i {
+.client-data img {
     width: 2.1rem;
     height: 2.1rem;
-    color: #F4BC61;;
+    object-fit: cover;
+    object-position: center center;
+    margin: 7.7rem 0.7rem 2rem 0;
+    color: #F4BC61;
     display: inline-block;
 }
 
 .client-data p {
     max-width: 29.2rem;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     color: #858585;
 }
+
+#client-say .swiper-wrapper {
+    padding: 17rem 0;
+}
+
+#client-say .swiper-button-prev,
+#client-say .swiper-button-next {
+    width: 7.3rem;
+    height: 7.8rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 3rem 0 rgba(0, 0, 0, 0.10);
+    background-color: #FFFFFF;
+}
+
+#client-say .swiper-button-prev {
+    position: absolute;
+    top: 5rem;
+    left: 124rem;
+}
+
+#client-say .swiper-button-next {
+    position: absolute;
+    top: 5rem;
+    right: 2.2rem;
+}
+
+#client-say .swiper-button-prev:after,
+#client-say .swiper-button-next:after {
+    color: #737373;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+/**********************************************************/
+/*******************get-price**********************************/
+#get-price .main-title{
+    max-width: 86.7rem;
+    margin-top: 6.6rem;
+    }
+    #get-price .sub-title{
+        max-width: 63rem;
+        margin: 0 auto;
+    }
