@@ -495,16 +495,24 @@ span {
     padding: 17rem 0;
 }
 
-#client-say .swiper-button-prev,
-#client-say .swiper-button-next {
+.nav-client {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-client .swiper-button-prev,
+.nav-client .swiper-button-next {
+    position: static;
+    margin: 0 6.6rem;
     width: 7.3rem;
     height: 7.8rem;
     border-radius: 1rem;
     box-shadow: 0 0.8rem 3rem 0 rgba(0, 0, 0, 0.10);
     background-color: #FFFFFF;
+
 }
 
-#client-say .swiper-button-prev {
+/* #client-say .swiper-button-prev {
     position: absolute;
     top: 5rem;
     left: 124rem;
@@ -514,10 +522,10 @@ span {
     position: absolute;
     top: 5rem;
     right: 2.2rem;
-}
+} */
 
-#client-say .swiper-button-prev:after,
-#client-say .swiper-button-next:after {
+.nav-client .swiper-button-prev:after,
+.nav-client .swiper-button-next:after {
     color: #737373;
     font-size: 2.5rem;
     font-weight: bold;
@@ -531,7 +539,7 @@ span {
     background: url(../images/traveller.jpg);
     background-size: cover;
     background-position: center center;
-    padding: 9rem 0 15.3rem 0;
+    padding: 6.6rem 0 15.7rem 0;
     position: relative;
 }
 
@@ -541,16 +549,20 @@ span {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 #get-price .main-title {
     max-width: 86.7rem;
     color: #FFFFFF;
     position: relative;
     z-index: 99;
 }
+
 #get-price .sub-title {
     color: #DFDFDF;
     max-width: 63rem;
     margin: 0 auto;
+    position: relative;
+    z-index: 99;
 }
 
 #get-price .email {
@@ -583,5 +595,79 @@ span {
     font-size: 20px;
     line-height: 34px;
     color: #DFDFDF;
-    margin: 0.7rem;
+    margin: 1.1rem;
+}
+
+/***************************************************************/
+/************************footer*********************************/
+.footer-top {
+    padding: 7rem 0;
+}
+
+.footer-top .container {
+    display: flex;
+    justify-content: space-between;
+}
+.traveller-logo p{
+    max-width: 43.7rem;
+    margin-top: 0.4rem;
+    font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+color: #6C6C6C;
+}
+.contact ul>li {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 70px;
+    color: #000000;
+}
+
+.contact ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: #6C6C6C;
+}
+
+.contact ul li a i {
+    color: #000000;
+    font-size: 1.8rem;
+    margin-right: 0.7rem;
+}
+
+.quick-link ul>li {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 70px;
+    color: #000000;
+}
+
+.quick-link ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    color: #6C6C6C;
+}
+
+.follow ul>li {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 70px;
+}
+
+.follow ul li a i {
+    margin-right: 1.4rem;
+    /* font-size: 2.3rem; */
+    color: #3D3D3D;
+}
+
+.footer-bottom {
+    background-color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    color: #DFDFDF;
+    padding: 4.4rem 0 2rem 0;
 }
