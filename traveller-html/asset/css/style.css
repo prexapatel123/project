@@ -91,12 +91,14 @@ header .search i {
     color: #FFFFFF;
     margin-left: 0.9rem;
 }
-header .container nav>ul>li{
+
+header .container nav>ul>li {
     position: relative;
 }
+
 .submenu,
 .submenu1,
-.submenu2{
+.submenu2 {
     top: 3rem;
     left: 0;
     position: absolute;
@@ -104,22 +106,26 @@ header .container nav>ul>li{
     border-radius: 1rem;
     display: none;
 }
+
 .submenu li a,
 .submenu1 li a,
-.submenu2 li a{
+.submenu2 li a {
     color: #626262;
 }
+
 .submenu li,
 .submenu1 li,
-.submenu2 li{
+.submenu2 li {
     width: 15rem;
     padding: 1rem 2rem;
 }
+
 nav ul>li:hover .submenu,
 nav ul>li:hover .submenu1,
-nav ul>li:hover .submenu2{
+nav ul>li:hover .submenu2 {
     display: block;
 }
+
 /*******************************************/
 /**************hero***********************/
 #hero {
@@ -639,7 +645,15 @@ span {
     display: flex;
     justify-content: space-between;
 }
-
+.traveller-logo{
+    max-width: 38.3rem;
+    height: 8.4rem;
+}
+.traveller-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .traveller-logo p {
     max-width: 43.7rem;
     margin-top: 0.4rem;
@@ -651,7 +665,7 @@ span {
 
 .contact h4,
 .quick-link h4,
-.follow h4{
+.follow h4 {
     font-weight: 600;
     font-size: 2.4rem;
     color: #000000;
@@ -670,6 +684,7 @@ span {
     font-size: 1.8rem;
     margin-right: 0.7rem;
 }
+
 .quick-link ul li a {
     font-weight: 500;
     font-size: 1.8rem;
@@ -692,22 +707,131 @@ span {
     color: #DFDFDF;
     padding: 4.4rem 0 2rem 0;
 }
+
 .contact li a:hover,
-.quick-link li a:hover{
+.quick-link li a:hover {
     color: steelblue;
 }
-.contact li a i:hover{
+
+.contact li a i:hover {
     color: steelblue;
 }
-.follow li a:first-child i:hover{
-    color:rgb(59, 89, 172)
+
+.follow li a:first-child i:hover {
+    color: rgb(59, 89, 172)
 }
-.follow li a:nth-child(2) i:hover{
+
+.follow li a:nth-child(2) i:hover {
     color: rgb(0 171 238);
 }
-.follow li a:nth-child(3) i:hover{
+
+.follow li a:nth-child(3) i:hover {
     color: rgb(196 48 43);
 }
-.follow li a:last-child i:hover{
-    color: rgb( 138, 58, 185);
+
+.follow li a:last-child i:hover {
+    color: rgb(138, 58, 185);
+}
+
+/****(laptop)*******/
+@media screen and (max-width:1440px) {
+    .container {
+        max-width: 134rem;
+    }
+
+    header nav>ul>li {
+        margin-right: 5.7rem;
+    }
+
+    #hero h1 {
+        font-size: 8rem;
+    }
+
+    #explore {
+        margin-top: 15.8rem;
+    }
+    .explore-img {
+        max-width: 43.4rem;
+        height: 35.1rem;
+    }
+    .explore-slider .swiper-button-prev,
+    .explore-slider .swiper-button-next {
+        width: 6rem;
+        height: 6rem;
+    }
+    .explore-slider .swiper-button-next:after, .explore-slider .swiper-button-prev:after {
+        font-size: 2rem;
+    }
+    .explore-slider .swiper-wrapper {
+        padding: 11rem 0;
+    }
+    .choose {
+        padding: 3.4rem 2.2rem 6rem 1.9rem;
+}
+    .choose-img {
+        width: 8.5rem;
+        height: 8.7rem;
+    }
+    .choose-slider .swiper-wrapper {
+        padding: 14rem 0;
+    }
+
+    #choose .swiper-button-prev,
+    #choose .swiper-button-next {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #choose .swiper-button-prev:after,
+    #choose .swiper-button-next:after {
+        font-size: 2rem;
+    }
+
+    #client-say .client-container {
+        margin-left: calc((100% - 134rem) / 2);
+    }
+    .client-img {
+        max-width: 10rem;
+        height: 10rem;
+    }
+    #client-say {
+        margin-top: 12.1rem;
+    }
+
+    .nav-client .swiper-button-prev,
+    .nav-client .swiper-button-next {
+        width: 6rem;
+        height: 6rem;
+        margin: 2.2rem 6.6rem 0 6.6rem;
+    }
+    .nav-client .swiper-button-prev:after, .nav-client .swiper-button-next:after {
+        font-size: 2rem;
+    }
+
+    #client-say .swiper-wrapper {
+        padding: 4rem 0;
+    }
+
+    .client-data {
+        padding: 8rem 5.4rem 3.1rem 5.3rem;
+    }
+
+    .client-data img {
+        margin: 3rem 0.7rem 2rem 0;
+    }
+
+    #get-price {
+        padding: 5.6rem 0 14.7rem 0;
+    }
+    .traveller-logo {
+        max-width: 36.3rem;
+        height: 6.4rem;
+    }
+    .footer-top {
+        padding: 5rem 0;
+    }
+
+
+
+
 }
