@@ -490,7 +490,6 @@ span {
 }
 
 .client-img img {
-    display: inline-block;
     object-fit: cover;
     object-position: center center;
     position: absolute;
@@ -503,6 +502,7 @@ span {
     padding: 9rem 5.4rem 5.1rem 5.3rem;
     box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.10);
     border-radius: 1rem;
+    border: 1px solid navy;
 }
 
 .client-data h4 {
@@ -867,16 +867,22 @@ span {
     header nav ul li a {
         font-size: 1.6rem;
     }
+    header .search i {
+        font-size: 1.6rem;
+    }
 
     #hero p {
         font-size: 1.6rem;
+        line-height: 2.6rem;
     }
 
     .search-box {
         max-width: 64.6rem;
         height: 6.8rem;
     }
-
+    .search-box select {
+        font-size: 1.6rem;
+    }
     #search-btn {
         padding: 0.8rem 2rem;
     }
@@ -891,6 +897,7 @@ span {
 
     .sub-title {
         font-size: 1.6rem;
+        line-height: 2.6rem;
     }
 
     .explore-img {
@@ -926,12 +933,9 @@ span {
         margin-top: 1.8rem;
     }
 
-    .sub-title {
-        font-size: 1.6rem;
-    }
-
     .choose {
-        padding: 2.4rem 2.2rem 5rem 1.9rem;
+        padding: 2.4rem 4.2rem 5rem 1.9rem;
+        margin: 0 3.4rem;
     }
 
     .choose-img {
@@ -951,6 +955,7 @@ span {
 
     .choose-data h4 {
         font-size: 2.1rem;
+        line-height: 2.6rem;
     }
 
     .choose-data p {
@@ -958,6 +963,13 @@ span {
         font-size: 1.6rem;
     }
 
+    #partner .sub-title {
+        margin: 1.5rem auto;
+    }
+
+    .partner-menu {
+        padding: 0px 11rem;
+    }
 
     #client-say .client-container {
         margin-left: calc((100% - 117rem) / 2);
@@ -974,30 +986,49 @@ span {
 
     #client-say .sub-title {
         margin-top: 0.8rem;
-        line-height: 2.6rem;
+    }
+.client-img{
+    height: 9rem;
+}
+    .client-img img {
+        width: 10rem;
+        height: 10rem;
+        top: 20%;
     }
 
     .client-data h4 {
         font-size: 2.1rem;
     }
 
+    .client-data img {
+        margin: 2rem 0.7rem 1rem 0;
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+
     .client-data p {
         font-size: 1.6rem;
+        line-height: 2.3rem;
     }
 
     .nav-client .swiper-button-prev,
     .nav-client .swiper-button-next {
         width: 5.5rem;
         height: 5.5rem;
-        margin: 1.2rem 6.6rem 0 6.6rem;
+        margin: 1.2rem 2.6rem 0 2.6rem;
     }
 
     #get-price {
         margin-top: 7.4rem;
+        padding: 5.6rem 0 12.7rem 0;
     }
 
     #get-price .email {
         margin-top: 6.8rem;
+    }
+
+    #get-price .sub-title {
+        margin: 2rem auto;
     }
 
     #get-price input {
@@ -1014,10 +1045,11 @@ span {
 
     #get-price button {
         font-size: 1.8rem;
+        margin: 0.9rem;
     }
 
     .traveller-logo {
-        max-width: 35.3rem;
+        max-width: 33.3rem;
         height: 5.4rem;
     }
 
@@ -1029,19 +1061,17 @@ span {
     .quick-link h4,
     .follow h4 {
         font-size: 2.1rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .contact ul li,
+    .quick-link ul li {
         margin-bottom: 1.3rem;
-     }
-
-    .contact ul li a {
-        font-size: 1.6rem;
     }
 
-    .quick-link ul li a {
-        font-size: 1.6rem;
-    }
-
+    .contact ul li a,
+    .quick-link ul li a,
     .contact ul li a {
-        font-weight: 500;
         font-size: 1.6rem;
     }
 
@@ -1049,7 +1079,34 @@ span {
         padding: 3.4rem 0 2rem 0;
         font-size: 1.6rem;
     }
-
-
-
+}
+/****************big tablet***********/
+@media screen and (max-width:1199px) {
+    .container{
+        max-width: 96rem;
+    }
+    header nav ul li a {
+        font-size: 1.4rem;
+    }
+    header .search i {
+        font-size: 1.4rem;
+    }
+    .logo{
+            max-width: 90%;
+    }
+    #hero h1 {
+        font-size: 7rem;
+    }
+    #hero p{
+        font-size: 1.4rem;
+    }
+    .search-box select {
+        font-size: 1.4rem;
+    }
+    #search-btn {
+        font-size: 1.4rem;
+    }
+    span {
+        font-size: 1.4rem;
+    }
 }
