@@ -867,9 +867,11 @@ span {
     header nav ul li a {
         font-size: 1.6rem;
     }
+
     #hero p {
         font-size: 1.6rem;
     }
+
     .search-box {
         max-width: 64.6rem;
         height: 6.8rem;
@@ -966,6 +968,15 @@ span {
         line-height: 6rem;
     }
 
+    #client-say .main-title {
+        line-height: 6rem;
+    }
+
+    #client-say .sub-title {
+        margin-top: 0.8rem;
+        line-height: 2.6rem;
+    }
+
     .client-data h4 {
         font-size: 2.1rem;
     }
@@ -1018,7 +1029,8 @@ span {
     .quick-link h4,
     .follow h4 {
         font-size: 2.1rem;
-    }
+        margin-bottom: 1.3rem;
+     }
 
     .contact ul li a {
         font-size: 1.6rem;
