@@ -173,7 +173,6 @@ nav ul>li:hover .submenu2 {
 
 .search-box {
     max-width: 73.6rem;
-    height: 7.8rem;
     background-color: #FFFFFF;
     border-radius: 4rem;
     display: flex;
@@ -189,7 +188,6 @@ nav ul>li:hover .submenu2 {
     font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
-    line-height: 3.6rem;
     color: #9B9B9B;
     font-family: 'Poppins';
 }
@@ -498,7 +496,6 @@ span {
     padding: 9rem 5.4rem 5.1rem 5.3rem;
     box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.10);
     border-radius: 1rem;
-    /* border: 1px solid navy; */
 }
 
 .client-data h4 {
@@ -516,7 +513,6 @@ span {
 
 .client-data img {
     width: 2.1rem;
-    height: 2.1rem;
     object-fit: cover;
     object-position: center center;
     margin: 5rem 0.7rem 2rem 0;
@@ -731,7 +727,7 @@ span {
     color: rgb(138, 58, 185);
 }
 
-/****(laptop)*******/
+/****(laptop)-1365*******/
 @media screen and (max-width:1440px) {
     .container {
         max-width: 134rem;
@@ -762,6 +758,11 @@ span {
     .explore-slider .swiper-button-next:after,
     .explore-slider .swiper-button-prev:after {
         font-size: 2rem;
+    }
+
+    .explore-circle span {
+        font-size: 6.2rem;
+        padding: 3.4rem 2.3rem;
     }
 
     .explore-slider .swiper-wrapper {
@@ -813,7 +814,7 @@ span {
     .nav-client .swiper-button-next {
         width: 6rem;
         height: 6rem;
-        margin: 2.2rem 6.6rem 0 6.6rem;
+        margin: 2.2rem 5rem 0 5rem;
     }
 
     .nav-client .swiper-button-prev:after,
@@ -846,7 +847,7 @@ span {
     }
 }
 
-/***********Big tablet***********/
+/***********Big tablet-1200***********/
 @media screen and (max-width:1365px) {
     .container {
         max-width: 117rem;
@@ -871,7 +872,6 @@ span {
 
     .search-box {
         max-width: 64.6rem;
-        height: 6.8rem;
     }
 
     .search-box select {
@@ -1087,7 +1087,7 @@ span {
     }
 }
 
-/****************big tablet***********/
+/****************big tablet-992***********/
 @media screen and (max-width:1199px) {
     .container {
         max-width: 95%;
@@ -1121,8 +1121,7 @@ span {
 
     .search-box {
         max-width: 50.6rem;
-        height: 5.8rem;
-        padding: 1.1rem 0.7rem 1.1rem 2.3rem;
+        padding: 0.7rem 0.7rem 0.7rem 2.3rem;
     }
 
     .search-box select {
@@ -1131,7 +1130,7 @@ span {
 
     #search-btn {
         font-size: 1.4rem;
-        padding: 0.4rem 1.1rem;
+        padding: 0.4rem 1.5rem
     }
 
     span {
@@ -1156,6 +1155,10 @@ span {
         height: 29.1rem;
     }
 
+    .explore-slide {
+        margin: 0 4rem;
+    }
+
     .explore-data h4 {
         font-size: 2rem;
         line-height: 2rem;
@@ -1166,6 +1169,7 @@ span {
     .explore-circle {
         width: 6.5rem;
         height: 6.3rem;
+        top: -5rem;
     }
 
     .explore-circle span {
@@ -1210,6 +1214,7 @@ span {
     }
 
     .choose {
+        margin: 0 6.4rem;
         padding: 2.4rem 4.2rem 5rem 1.9rem;
     }
 
@@ -1247,6 +1252,10 @@ span {
 
     #client-say .client-container {
         margin-left: calc((100% - 95%) / 2);
+    }
+
+    .client-slide {
+        margin: 0 7.2rem;
     }
 
     #client-say h3 {
@@ -1353,7 +1362,7 @@ span {
 
 }
 
-/***************************************/
+/***************768************************/
 @media screen and (max-width:991px) {
     header nav ul li a {
         font-size: 1.3rem;
@@ -1388,8 +1397,7 @@ span {
 
     .search-box {
         max-width: 42.6rem;
-        height: 4.8rem;
-        padding: 1.1rem 0.6rem 1.1rem 2.3rem;
+        padding: 0.6rem 0.6rem 0.6rem 1.8rem;
     }
 
     .search-box select {
@@ -1415,7 +1423,7 @@ span {
     }
 
     #explore .main-title {
-        max-width: 67rem;
+        max-width: 53rem;
     }
 
     #explore .sub-title {
@@ -1447,6 +1455,10 @@ span {
         font-size: 4.2rem;
     }
 
+    .explore-data {
+        padding: 0 1.9rem 2.6rem 1rem;
+    }
+
     .explore-data h4 {
         font-size: 1.8rem;
     }
@@ -1476,6 +1488,7 @@ span {
     }
 
     .choose {
+        margin: 0 4.4rem;
         padding: 2.2rem 4rem 4rem 1.9rem;
     }
 
@@ -1509,18 +1522,21 @@ span {
         justify-content: space-evenly;
         flex-wrap: wrap;
         margin-top: 5rem;
-        height: 4rem;
         line-height: 5rem;
         padding: 0 10rem;
     }
 
     .partner-menu img {
         padding: 0.5rem 0;
-        max-width: 14rem;
+        max-width: 15rem;
     }
 
     #client-say {
         margin-top: 13.1rem;
+    }
+
+    .client-slide {
+        margin: 0 4.2rem;
     }
 
     #client-say h3 {
@@ -1544,7 +1560,7 @@ span {
     .nav-client .swiper-button-next {
         width: 4.5rem;
         height: 4.5rem;
-        margin: 1rem 2rem 0 1.5rem;
+        margin: 1.5rem 2rem 0 1.5rem;
     }
 
     .nav-client .swiper-button-prev:after,
@@ -1579,7 +1595,7 @@ span {
 
     #get-price input {
         font-size: 1.3rem;
-        margin: 1rem 1.9rem;
+        margin: 1.5rem 1.9rem;
     }
 
     #get-price button {
@@ -1599,15 +1615,15 @@ span {
     }
 
     .quick-link {
-        max-width: 40%;
+        width: 40%;
     }
 
     .follow {
-        max-width: 26%;
+        width: 26%;
     }
 
     .contact {
-        max-width: 26%;
+        width: 26%;
     }
 
     .contact ul li,
@@ -1616,7 +1632,7 @@ span {
     }
 
     .follow ul li a i {
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-right: 2.3rem;
     }
 
@@ -1642,7 +1658,7 @@ span {
     }
 }
 
-/*********************************************/
+/*****************575****************************/
 @media screen and (max-width:767px) {
     header nav ul li a {
         font-size: 1.2rem;
@@ -1660,8 +1676,7 @@ span {
 
     .search-box {
         max-width: 37.6rem;
-        height: 4.2rem;
-        padding: 1rem 0.5rem 1rem 2.3rem;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
     }
 
     .search-box select {
@@ -1718,8 +1733,8 @@ span {
     }
 
     .explore-circle {
-        top: -4.5rem;
-        right: 4rem;
+        top: -4rem;
+        right: 3rem;
         width: 5.5rem;
         height: 5.5rem;
     }
@@ -1869,7 +1884,7 @@ span {
 
     #get-price input {
         font-size: 1.2rem;
-        margin: 0.5rem 1.9rem;
+        margin: 1.3rem 1.9rem;
     }
 
     .footer-top {
@@ -1898,7 +1913,7 @@ span {
     }
 
     .contact {
-        max-width: 31%;
+        width: 31%;
     }
 
     .contact ul li,
@@ -1907,7 +1922,7 @@ span {
     }
 
     .follow {
-        max-width: 31%;
+        width: 31%;
     }
 
     .follow ul li a i {
@@ -1924,7 +1939,7 @@ span {
     }
 }
 
-/**********************************************/
+/******************480****************************/
 @media screen and (max-width:574px) {
     #hero h1 {
         font-size: 4rem;
@@ -1948,8 +1963,7 @@ span {
 
     .search-box {
         max-width: 34.6rem;
-        height: 4rem;
-        padding: 1rem 0.4rem 1rem 2.3rem;
+        padding: 0.4rem 0.4rem 0.4rem 2.3rem;
     }
 
     span {
@@ -1993,18 +2007,20 @@ span {
     }
 
     .explore-circle {
+        top: -4rem;
         right: 2rem;
         width: 5rem;
         height: 5rem;
     }
 
     .explore-circle span {
-        padding: 2.8rem 1.6rem;
+        padding: 2.7rem 1.7rem;
         font-size: 3.5rem;
     }
 
     .explore-data {
-        padding: 0 1.9rem 2rem 1.4rem;
+     padding: 0 1.9rem 2rem 1rem;
+
     }
 
     .explore-data h4 {
@@ -2043,7 +2059,7 @@ span {
     }
 
     #choose {
-        background-size: 100% 32rem;
+        background-size: 100% 31rem;
     }
 
     .choose-img {
@@ -2180,7 +2196,7 @@ span {
     .contact,
     .quick-link,
     .follow {
-        max-width: 100%;
+        width: 100%;
         margin-top: 2rem;
     }
 
@@ -2230,12 +2246,17 @@ span {
         line-height: 1.7rem;
     }
 
+    .search-box {
+        padding: 0.3rem 0.3rem 0.3rem 1rem;
+    }
+
     .search-box select {
         font-size: 1rem;
     }
 
     #search-btn {
         font-size: 1rem;
+        padding: 1rem 1rem;
     }
 
     span {
@@ -2255,7 +2276,9 @@ span {
     #explore {
         margin-top: 5.8rem;
     }
-
+#explore .sub-title{
+    line-height: 1.5rem;
+}
     .explore-slider .swiper-button-prev,
     .explore-slider .swiper-button-next {
         width: 3rem;
@@ -2307,7 +2330,7 @@ span {
     }
 
     #choose {
-        background-size: 100% 39rem;
+        background-size: 100% 24rem;
         padding-top: 2rem;
     }
 
@@ -2315,7 +2338,7 @@ span {
     #choose .swiper-button-next {
         width: 3rem;
         height: 3rem;
-        top: 8.5rem;
+        top: 7rem;
     }
 
     #choose .swiper-button-prev:after,
@@ -2323,9 +2346,13 @@ span {
         font-size: 1.3rem;
     }
 
+    .choose-slider .swiper-wrapper {
+        padding: 5rem 0;
+    }
+
     .choose {
-        margin: 0px 5.4rem;
-            padding: 2rem 3rem 3rem 1.6rem;
+        margin: 0px 6.4rem;
+        padding: 2rem 3rem 3rem 1.6rem;
     }
 
     .choose-img {
@@ -2344,8 +2371,141 @@ span {
         margin-top: 0.5rem;
         margin-bottom: 1.5rem;
     }
+
     .choose-data a {
         font-size: 1.3rem;
+    }
+
+    #partner .sub-title {
+        margin: 1rem auto;
+    }
+
+    .partner-menu {
+        margin-top: 2.5rem;
+    }
+
+    .partner-menu img {
+        padding: 0.6rem 0;
+        max-width: 11rem;
+    }
+
+    #client-say {
+        margin-top: 23rem;
+    }
+
+    #client-say h3 {
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
+
+    #client-say .main-title {
+        line-height: 4rem;
+    }
+
+    .nav-client .swiper-button-prev,
+    .nav-client .swiper-button-next {
+        width: 3rem;
+        height: 3rem;
+        margin: 1.5rem 1rem 0 1rem;
+    }
+
+    .nav-client .swiper-button-prev:after,
+    .nav-client .swiper-button-next:after {
+        font-size: 1.3rem;
+    }
+
+    .client-slide {
+        margin: 0 4.2rem;
+    }
+
+    .client-data h4 {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+
+    .client-data p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .client-data img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 1.5rem 0.7rem 0.8rem 0;
+    }
+
+    .client-data {
+        padding: 6rem 5rem 3.1rem 4rem;
+    }
+
+    #client-say .swiper-wrapper {
+        padding: 2.5rem 0;
+    }
+
+    #get-price {
+        margin-top: 5.4rem;
+    }
+
+    #get-price {
+        padding: 3rem 0 9rem 0;
+    }
+
+    #get-price .sub-title {
+        margin: 0.7rem auto;
+        line-height: 1.5rem;
+    }
+
+    #get-price input {
+        font-size: 1rem;
+        margin: 1rem 1.3rem;
+    }
+
+    #get-price button {
+        font-size: 1rem;
+        margin: 0.3rem;
+        padding: 0.3rem 1.2rem;
+    }
+
+    .footer-top {
+        padding: 5rem 0;
+    }
+
+    .traveller-logo p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .contact h4,
+    .quick-link h4,
+    .follow h4 {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .contact ul li a,
+    .quick-link ul li a,
+    .contact ul li a {
+        font-size: 1rem;
+    }
+
+    .contact ul li,
+    .quick-link ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .contact ul li a i {
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+    }
+
+    .follow ul li a i {
+        margin-right: 1.6rem;
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom {
+        padding: 1rem 0 0.5rem 0;
+        font-size: 1rem;
     }
 
 
