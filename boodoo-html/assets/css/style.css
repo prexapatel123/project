@@ -32,54 +32,112 @@ img {
     margin-left: 5rem;
 }
 
-.container {
-    background: url(../images/Background.png);
+.common-btn {
+    display: inline-block;
+    width: 30rem;
+    background-color: #C8191C;
+    padding: 1.5rem 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
 }
 
+.main-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #C8191C;
+}
+
+.sub-title {
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 114px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/**********************header***********************************/
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
 }
 
 #hero {
-    background: url(../images/wheel1.png);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
     position: relative;
-    z-index: 9;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
 }
 
 #hero::before {
     content: '';
-    inset: 0;
+    background: url(../images/hero-banner.png);
+    top: 0;
+    left: 0;
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-position: top center;
+    opacity: 0.1;
+}
+
+.hero-data {
+    padding-top: 37.7rem;
+    color: #FFFFFF;
+    text-align: center;
+    z-index: 999;
+    position: relative;
 }
 
 .hero-data h1 {
-    margin-top: 37.7rem;
-    width: 1567px;
     font-size: 130px;
     line-height: 160px;
-    text-align: center;
-    color: #FFFFFF;
 }
 
-.hero-data span {
+.hero-data h1 span {
     color: #C8191C;
 }
 
 .hero-data p {
-    width: 906px;
+    max-width: 906px;
+    margin: 0 auto;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding: 5.5rem 0;
+}
+
+/***************about*****************************/
+#about {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+    padding-top: 20rem;
+}
+
+.row img {
+    margin: 0 auto;
+}
+
+.row h3 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 73px;
     text-align: center;
+    text-transform: uppercase;
     color: #FFFFFF;
+    margin-top: 2rem;
+}
+.about-img-data{
+    padding-top: 20rem;
+}
+.about-img{
+    border-right: 2px solid white;
 }
 
 
