@@ -52,9 +52,7 @@ img {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.row{
-    overflow-x: auto;
-}
+
 /**********************header***********************************/
 .nav-link {
     font-weight: 700;
@@ -180,12 +178,11 @@ header {
     line-height: 191px;
     color: #FFFFFF;
 }
-.team-img{
+
+.team-img {
     padding-left: 8.8rem;
 }
-.team-img img{
-    padding: 0;
-}
+
 .team-data p {
     max-width: 485px;
     margin-top: 11.5rem;
@@ -198,21 +195,130 @@ header {
 .team h2 {
     margin-top: 10.4rem;
 }
+
 /*************************services**************************/
-#services{
+#services {
     padding-top: 20rem;
     background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
 }
-#services .main-title{
+
+#services .main-title {
     text-align: center;
 }
-#services .sub-title{
+
+#services .sub-title {
     width: 1434px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+#services .row>* {
+    padding-bottom: 15rem;
+}
+
+#services .row>*:nth-child(odd) {
+    padding-right: 7.5rem;
+    padding-left: 11.9rem;
+}
+
+
+#services .row>*:nth-child(even) {
+    padding-left: 7.5rem;
+    padding-right: 11.9rem;
+}
+
+.service-data {
+    border: 2px solid white;
+    padding: 5rem 6rem;
+}
+
+.service-data h3 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 5rem;
+}
+
+.service-data p {
+    max-width: 53.1rem;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/************************why*****************************/
+#why {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    padding-top: 20rem;
+}
+
+#why .main-title {
+    text-align: center;
+}
+
+#why .sub-title {
+    text-align: center;
+    margin-bottom: 17.2rem;
+}
+
+.why img {
+    margin: 0 auto;
+}
+
+.why h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.why p {
+    max-width: 395px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
     text-align: center;
     margin: 0 auto;
 }
 
+/*************************horoscope*******************/
+#horoscope {
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+    padding-top: 20rem;
+}
 
+#horoscope .main-title {
+    text-align: center;
+}
+
+#horoscope .sub-title {
+    max-width: 105.4rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.horo-data {
+    display: flex;
+}
+
+.horoscope h3 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 73px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
 
 
