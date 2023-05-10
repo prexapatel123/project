@@ -25,13 +25,6 @@ img {
     display: block;
 }
 
-.nav-link {
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    margin-left: 5rem;
-}
-
 .common-btn {
     display: inline-block;
     width: 30rem;
@@ -41,6 +34,7 @@ img {
     font-size: 24px;
     line-height: 33px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .main-title {
@@ -58,8 +52,17 @@ img {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
+.row{
+    overflow-x: auto;
+}
 /**********************header***********************************/
+.nav-link {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-left: 5rem;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -120,11 +123,11 @@ header {
     padding-top: 20rem;
 }
 
-.row img {
+.about img {
     margin: 0 auto;
 }
 
-.row h3 {
+.about h3 {
     font-weight: 700;
     font-size: 54px;
     line-height: 73px;
@@ -133,11 +136,80 @@ header {
     color: #FFFFFF;
     margin-top: 2rem;
 }
-.about-img-data{
+
+.about-img-data {
     padding-top: 20rem;
 }
-.about-img{
+
+.about-img {
     border-right: 2px solid white;
+}
+
+.about-img p {
+    width: 541px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-top: 10rem;
+}
+
+.about-data {
+    padding-left: 11.5rem;
+}
+
+.about-data .sub-title {
+    margin-top: 1.8rem;
+}
+
+.about-data .common-btn {
+    margin-top: 10rem;
+}
+
+/*******************team*****************************/
+#team {
+    background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
+    padding-top: 20rem;
+}
+
+.team-data h2,
+.team h2 {
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 191px;
+    color: #FFFFFF;
+}
+.team-img{
+    padding-left: 8.8rem;
+}
+.team-img img{
+    padding: 0;
+}
+.team-data p {
+    max-width: 485px;
+    margin-top: 11.5rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.team h2 {
+    margin-top: 10.4rem;
+}
+/*************************services**************************/
+#services{
+    padding-top: 20rem;
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+#services .main-title{
+    text-align: center;
+}
+#services .sub-title{
+    width: 1434px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
