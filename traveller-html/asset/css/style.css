@@ -98,7 +98,8 @@ header .container nav>ul>li {
 
 .submenu,
 .submenu1,
-.submenu2 {
+.submenu2,
+.submenu3 {
     top: 3rem;
     left: 0;
     position: absolute;
@@ -123,6 +124,10 @@ header .container nav>ul>li {
 nav ul>li:hover .submenu,
 nav ul>li:hover .submenu1,
 nav ul>li:hover .submenu2 {
+    display: block;
+}
+
+.submenu1>li:hover .submenu3 {
     display: block;
 }
 
@@ -1361,11 +1366,45 @@ span {
     }
 
 }
+.showhide{
+    display: none;
+}
 
 /***************768************************/
 @media screen and (max-width:991px) {
-    header nav ul li a {
+    header nav>ul {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: thistle;
+        display: block;
+        transition: all 1s;
+    }
+
+    header nav>ul>li {
+        padding-bottom: 20px;
+    }
+
+    .submenu,
+    .submenu1,
+    .submenu2,
+    .submenu3 {
+        position: relative;
+    }
+
+    .submenu li a {
         font-size: 1.3rem;
+        padding-left: 30px;
+    }
+
+    .submenu1>li>ul>li>a {
+        padding-left: 40px;
+    }
+    .showhide{
+        right: 0 !important;
+        display: block;
     }
 
     header nav>ul>li {
@@ -1376,6 +1415,10 @@ span {
         margin-top: 0.5rem;
         margin-left: 0.5rem;
         font-size: 1.3rem;
+    }
+    header nav>i{
+        display: inline-block;
+        padding-right: 260px;
     }
 
     #hero h1 {
@@ -1660,6 +1703,7 @@ span {
 
 /*****************575****************************/
 @media screen and (max-width:767px) {
+
     header nav ul li a {
         font-size: 1.2rem;
     }
@@ -2019,7 +2063,7 @@ span {
     }
 
     .explore-data {
-     padding: 0 1.9rem 2rem 1rem;
+        padding: 0 1.9rem 2rem 1rem;
 
     }
 
@@ -2276,9 +2320,11 @@ span {
     #explore {
         margin-top: 5.8rem;
     }
-#explore .sub-title{
-    line-height: 1.5rem;
-}
+
+    #explore .sub-title {
+        line-height: 1.5rem;
+    }
+
     .explore-slider .swiper-button-prev,
     .explore-slider .swiper-button-next {
         width: 3rem;

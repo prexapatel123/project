@@ -19,7 +19,9 @@
                 <img src="../asset/images/logo.png" alt="">
             </a>
             <nav>
-                <ul>
+                <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+                <ul id="menu">
+                    <i class="fa-solid fa-xmark" onclick="togglemenu()"></i>
                     <li><a href="#">Home </a></li>
                     <li><a href="#">About Us </a></li>
                     <li><a href="#">Package <i class="fa-solid fa-angle-down"></i> </a>
@@ -32,7 +34,13 @@
                     </li>
                     <li><a href="#">Destination <i class="fa-solid fa-angle-down"></i> </a>
                         <ul class="submenu1">
-                            <li><a href="#">Goa</a></li>
+                            <li><a href="#">Goa</a>
+                                <ul class="submenu3">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">1</a></li>
+
+                                </ul>
+                            </li>
                             <li><a href="#">Bali</a></li>
                             <li><a href="#">Simla</a></li>
                             <li><a href="#">Dubai</a></li>
@@ -411,9 +419,9 @@
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
-                320:{
-                    slidesPerView:1,
-                    spaceBetween:0,
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
                 },
                 640: {
                     slidesPerView: 1,
@@ -441,9 +449,9 @@
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
-                320:{
-                    slidesPerView:1,
-                    spaceBetween:0,
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
                 },
                 640: {
                     slidesPerView: 1,
@@ -471,9 +479,9 @@
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
-                320:{
-                    slidesPerView:1,
-                    spaceBetween:0,
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
                 },
                 640: {
                     slidesPerView: 1,
@@ -489,6 +497,11 @@
                 },
             },
         });
+    </script>
+    <script>
+        function togglemenu(){
+            document.getElementById("menu").classList.toggle('showhide');
+        }
     </script>
 
 </body>
